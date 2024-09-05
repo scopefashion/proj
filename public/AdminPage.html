@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/OnlineShop.css">
+    <link rel="stylesheet" href="./stylesheets/AdminPage.css">
+    <title>MemberPage</title>
+</head>
+<body>
+    <div id="function">
+        <div id="search-product">
+            <input type="text" id="search" name="search" placeholder="search">
+        </div>
+        <div id="image-container">
+            <a href="./OnlineShop.html" class="button"><img src="https://img.icons8.com/?size=100&id=14096&format=png&color=000000" id="home" alt="home" width="48" height="48"></a>
+            <a href="./SigninPage.html" class="button"><img src="https://img.icons8.com/?size=100&id=15265&format=png&color=000000" id="person" alt="person" width="48" height="48"></a>
+            <a href="./ShoppingCart.html" class="button"><img src="https://img.icons8.com/?size=100&id=15893&format=png&color=000000" id="cart" alt="cart" width="48" height="48"></a>
+        </div>
+    </div><hr>
+    <div class="main">
+        <div id="ani">
+        <h2 id="add">Add New Item</h2>
+        <form>   
+            <table class="table">
+                <tr>
+                    <th>Product Name</th>
+                    <td><label for="product-name"></label>
+                        <input type="text" id="product-name" name="product-name" required></td>
+                </tr>
+                <tr>
+                    <th><label for="product-description">Product Description:</label></th>
+                    <td><input id="product-description" name="product-description" required></input></td>
+                  </tr>
+                <tr>
+                    <th><label for="product-price">Price:</label></th>
+                    <td><input type="number" id="product-price" name="product-price" min="0" step="0.01" required></td>
+                 </tr>
+                 <tr>
+                    <th><label for="product-category">Category:</label>
+                    </th>
+                    <td><label for="product-category"></label>
+                        <input type="text" id="product-category" name="product-category" required></td>                 </tr>
+                 <tr>
+                    <th><label for="product-image">Image:</label>
+                    </th>
+                    <td><input type="file" id="product-image" name="product-image" accept="image/*" required>
+                    </td>
+                 </tr>
+
+        </table>
+              <input type="submit" value="Add">
+          </form>
+        </div>  
+        <h2 id="product">Product Edit</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Product Price</th>
+                    <th>Product Amount</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>夾克</td>
+                    <td>$10</td>
+                    <td>10</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>夾克</td>
+                    <td>$10</td>
+                    <td>20</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 id="order">Order Edit</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Order number</th>
+                    <th>Customer Name</th>
+                    <th>Order Date</th>
+                    <th>Total</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Alice</td>
+                    <td>01-03-2024</td>
+                    <td>1,000</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Alice</td>
+                    <td>01-03-2024</td>
+                    <td>3,000</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 id="customer">Customer Edit</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Customer Number</th>
+                    <th>Customer Name</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Alice</td>
+                    <td>alice@example.com</td>
+                    <td>0912345678</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Alice</td>
+                    <td>alice@example.com</td>
+                    <td>0912345678</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+    <a href="./OnlineShop.html" class="button"><input type="button" value="Logout" id="logout"></a>
+</body>
+</html>

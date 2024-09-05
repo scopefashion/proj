@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/stylesheets/OnlineShop.css">
+    <link rel="stylesheet" href="./stylesheets/OnlineShop.css">
+    <link rel="stylesheet" href="./stylesheets/Cart.css">
     <title>Shopping Cart</title>
 </head>
 <body>
@@ -17,6 +18,34 @@
             <a href="./ShoppingCart.html" class="button"><img src="https://img.icons8.com/?size=100&id=15893&format=png&color=000000" id="cart" alt="cart" width="48" height="48"></a>
         </div>
     </div><hr>
-
+    
+    <h1> My Shopping Cart</h1>
+    <table>
+        <tr>
+            <th class="title">Item</th>
+            <th class="title">Price</th>
+            <th class="title">Quantity</th>
+            <th class="title">Subtatol</th>
+        <tr>
+        <tr>
+            <td id="product-content">
+                <img src="https://img.icons8.com/?size=100&id=p7knLKcrWmUD&format=png&color=000000" id="cloth-detail-1" alt="cloth" width="208">
+                <p class="text">夾克</p>
+            <td>                
+                <p class="price">Price:$10</p>
+            </td>
+            <td id="control-quantity">
+                <button type="button" id="decrease">-</button>
+                <label for="quantity"></label>
+                <input type="number" id="quantity" name="quantity" min="0">
+                <button type="button" id="increase">+</button>
+            </td>
+            <td> 
+                <p id="subtatol">$300</p>
+                <button type="button" id="delete"><img src="https://img.icons8.com/?size=100&id=S8c1v6vJyqU1&format=png&color=000000" alt="delete" width="24" height="24"></button>
+            </td>
+        <tr>
+    </table>
+    <input type="submit" value="Next Step" >
 </body>
 </html>

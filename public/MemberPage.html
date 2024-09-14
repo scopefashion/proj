@@ -19,13 +19,23 @@
         </div>
     </div><hr>
     <h2>My Order list</h2>
-    <table>
+    <table >
         <tr>
-            <th>Order number:</td>
-            <td>123459379458304589302459303</td>
-            <td><input type="button" value="order detail" id="order-detail"></td>
-            </th>
-        <tr>
+            <th>Order number</th>
+            <th>Products detail</th>
+            <th>Quantity</th>
+            <th>Total Price </th>
+            <th>Status</th>
+        </tr>
+
+        <tbody id="detail">
+            <td><input type="button" onclick='detail()' value="order detail" id="order-detail"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tbody>
+
     </table>
     <a href="./OnlineShop.html" class="button"><input type="button" value="Logout" id="logout"></a>
 </body>

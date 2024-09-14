@@ -20,10 +20,11 @@ table {
   margin-left: auto;
   margin-right: auto;
   border-collapse: collapse;
+  width: 80%;
 }
 th,
 td {
-  padding: 0rem 3rem;
+  padding: 1rem 2rem;
 }
 
 input[type="button"] {
@@ -48,4 +49,9 @@ input[type="button"]:hover {
   width: 200px;
   height: 50px;
   font-size: 1rem;
+}
+
+p{
+  padding: 10rem 0rem;
+
 }

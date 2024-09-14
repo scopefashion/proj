@@ -31,12 +31,26 @@
                     </td>
                 </tr>
                 <tr>
+                    <th>Product Name(Chinese):</th>
+                    <td>
+                        <label for="product-cname"></label>
+                        <input type="text" id="product-cname" name="product-cname" required>
+                    </td>
+                </tr>
+                <tr>
                     <th>Product Description:</th>
                     <td>
-                        <label for="product-description">Product Description:</label>
-                        <input id="product-description" name="product-description" required></input>
+                        <label for="product-description"></label>
+                        <input type="text" id="product-description" name="product-description" required></input>
                     </td>
-                  </tr>
+                </tr>
+                <tr>
+                    <th>Product Description(Chinese):</th>
+                    <td>
+                        <label for="product-cdescription"></label>
+                        <input type="text" id="product-cdescription" name="product-cdescription" required></input>
+                    </td>
+                </tr>
                 <tr>
                     <th>Price:</th>
                     <td>
@@ -47,15 +61,59 @@
                     <th>Category:</th>
                     <td>
                         <label for="product-category"></label>
-                        <input type="text" id="product-category" name="product-category" required>
-                    </td>                
-                 <tr>
+                        <select name="product-category" id="product-category"  required >
+                            <option value="Jackets">Jackets</option>
+                            <option value="Hoodies">Hoodies</option>
+                            <option value="T-Shirts">T-Shirts</option>
+                            <option value="Jeans">Jeans</option>
+                            <option value="Shoes">Shoes</option>
+                            <option value="Dresses">Dresses</option>
+                            <option value="Skirts">Skirts</option>
+                            <option value="Sweaters">Sweaters</option>
+                            <option value="Shorts">Shorts</option>
+                            <option value="Activewear">Activewear</option>
+                        </select>                    
+                    </td> 
+                </tr>
+                <tr>
+                    <th>Stock:</th>
+                    <td>
+                        <label for="stock"></label>
+                        <input type="number" id="stock" name="stock" min="0" required></input>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Size:</th>
+                    <td>
+                        <label for="size"></label>
+                        <select name="size" id="size" required>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Color:</th>
+                    <td>
+                        <label for="color"></label>
+                        <input type="text" id="color" name="color" required></input>
+                    </td>
+                </tr>   
+                <tr>
+                    <th>Brand:</th>
+                    <td>
+                        <label for="brand"></label>
+                        <input type="text" id="brand" name="brand" required></input>
+                    </td>
+                </tr>              
+                <tr>
                     <th>Image:</th>
                     <td>
                         <label for="product-image"></label>
                         <input type="file" id="product-image" name="product-image" accept="image/*" required>
                     </td>
-                 </tr>
+                </tr>
             </table>
                 <input type="submit" value="Add">
         </form>

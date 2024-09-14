@@ -16,6 +16,7 @@
 }
 .table th {
     background-color: #f0f0f0;
+    width: 30%;
 }
 
 input[type="button"] {
@@ -61,4 +62,9 @@ input[type="button"] {
   input[type="submit"]:hover , button:hover{
     background-color: rgb(3, 121, 175);
     cursor: pointer;
+  }
+
+  select{
+    width: 100%;
+    text-align: center;
   }

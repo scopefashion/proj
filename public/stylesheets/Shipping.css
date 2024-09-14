@@ -1,0 +1,38 @@
+.main {
+  padding: 20px;
+  text-align: center;
+  margin: 1rem 8rem;
+}
+
+span {
+  font-size: xx-small;
+}
+
+.information {
+  padding: 0.5rem;
+}
+#name,
+#address,
+#phone {
+  width: 50%;
+  padding: 0.5rem;
+}
+
+input[type="submit"],
+button {
+    background-color: rgb(0, 139, 203);
+    color: white;
+    font-size: 1rem;
+    width: 200px;
+    height: 50px;
+    margin: 3rem;
+    position: sticky;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+input[type="submit"]:hover,
+button:hover {
+  background-color: rgb(3, 121, 175);
+  cursor: pointer;
+}
